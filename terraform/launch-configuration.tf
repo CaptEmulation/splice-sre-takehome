@@ -1,5 +1,5 @@
 resource "aws_launch_configuration" "ecs-launch-configuration" {
-    name                        = "ecs-launch-configuration"
+    name_prefix                 = "ecs-launch-configuration"
     image_id                    = "ami-fad25980"
     instance_type               = "t3.small"
     iam_instance_profile        = aws_iam_instance_profile.ecs-instance-profile.id

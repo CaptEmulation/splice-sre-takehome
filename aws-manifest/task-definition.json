@@ -1,0 +1,16 @@
+{
+  "family": "spliceSreTakehome",
+  "containerDefinitions": [{
+    "name": "http-hello-world",
+    "image": "soapbubble/hello-stripe:%BUILD%",
+    "essential": true,
+    "portMappings": [
+      {
+        "containerPort": 80,
+        "hostPort": 80
+      }
+    ],
+    "memory": 500,
+    "cpu": 10
+  }]
+}

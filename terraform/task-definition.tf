@@ -8,7 +8,7 @@ resource "aws_ecs_task_definition" "spliceSreTakehome" {
 [
   {
     "name": "http-hello-world",
-    "image": "strm/helloworld-http",
+    "image": "soapbubble/hello-splice@latest",
     "essential": true,
     "portMappings": [
       {
